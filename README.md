@@ -1,2 +1,2 @@
 # checkInn
-Official Temp Check-Inn Page
+Official Check-Inn Page

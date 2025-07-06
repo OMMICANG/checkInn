@@ -1,5 +1,5 @@
 {
-  "name": "check-inn",
+  "name": "devcheckinn",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.9.3",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.0",
     "next": "15.3.4",
     "react": "^19.0.0",
-    "react-curved-text": "^3.0.1",
+    "react-date-range": "^2.0.1",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "resend": "^4.6.0"

@@ -1,0 +1,211 @@
+.footer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Playfair Display", serif;
+  font-size: 0.7rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 0.312rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.footerInfoBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 900;
+    width: 100%;
+    height: 50vh;
+    padding: 0.625rem;
+    border: 1px ridge #000;
+    border-radius: 0.15rem;
+    box-shadow: 1px 1px 2px 2px var(--sCol);
+
+}
+.footerInfoBox>div {
+    justify-content: space-evenly;
+    width: 40%;
+    height: 20vh;
+    margin: 0.312rem;
+    padding: 0.75rem 0.312rem;
+    box-shadow: 1px 1px 2px 2px var(--sCol);
+    border: 1px solid #000;
+    border-radius: 0.312rem;
+
+}
+
+.footerInfoBox>span {
+    width: 40%;
+    height: 20vh;
+    /* margin: 0.312rem; */
+    padding: 1rem;
+    box-shadow: 1px 1px 2px 2px var(--sCol);
+    border: 1px solid #000;
+    border-radius: 0.312rem;
+}
+
+.getNotif {
+    display: flex;
+    flex-direction: column;
+}
+.subHeaderBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding: 0.312rem;
+    margin-bottom: 0.5rem;
+
+
+}
+.subHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.625rem;
+    font-weight: 900;
+    margin-bottom: 0.312rem;
+    color: #000;
+}
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    border: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  display: flex;
+  width: 90%;
+  max-width: 90%;
+  padding: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+  font-size: 0.312rem;
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input::placeholder {
+
+  font-family: 'Playfair Display', serif;
+  font-size: 0.312rem;
+  color: #000;
+  
+}
+
+.input:focus {
+  border-color: #ffcc80;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.button {
+  width: 70%;
+  max-width: 70%;
+  padding: 0.15rem;
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+  border: none;
+  color: #000;
+  font-weight: 800;
+  font-size: 0.312rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+}
+
+.thankYou {
+  display: flex;
+  position: relative;
+  width: 95%;
+  color: #fff;
+  margin-top: 0.5rem;
+  padding: 0.312rem 0.625rem;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.25rem;
+  text-wrap: wrap;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.corporate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #000;
+    font-weight: 900;
+    font-size: 0.312rem;
+}
+
+.legals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #000;
+    font-weight: 900;
+    font-size: 0.312rem;
+}
+.footerCopyrightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.312rem;
+    color: #000;
+    text-align: center;
+    border: 1px ridge #000;
+    border-radius: 0.15rem;
+    box-shadow: 1px 1px 2px 2px var(--sCol);
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breathFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.animateBreath {
+  animation: breathFadeIn 1.5s ease-out forwards;
+}

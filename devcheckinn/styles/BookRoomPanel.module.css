@@ -1,0 +1,279 @@
+.panelWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  width: 100%;
+  height: 37vh;
+  max-height: 80vh;
+  padding: 0.312rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  justify-content: space-evenly;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.panelContent {
+  text-align: center;
+  width: 90%;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 0.312rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hr {
+  width: 90%;
+  height: 1px;
+  background-color: #000;
+  margin: 0 0 1.5rem 0;
+}
+
+.description {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.closeButton {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-family: 'Lobster', cursive;
+  background: linear-gradient(to right, #ff9800, #ffc107);
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+  transition: background 0.3s ease;
+}
+
+.closeButton:hover {
+  background: linear-gradient(to right, #ffa726, #ffca28);
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.input {
+  flex: 1 1 48%;
+  padding: 0.312rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+  font-size: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+  font-family: 'Playfair Display', serif;
+}
+
+.input::placeholder {
+  font-size: 0.5rem;
+  color: #666;
+}
+
+.input:focus {
+  border-color: #ffcc80;
+  background-color: #fff7e6;
+}
+
+.datePickerWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dateInput {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+  cursor: pointer;
+}
+
+.calendarPopup {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  z-index: 1001;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar {
+  font-size: 0.6rem;
+  width: 100%;
+  max-width: 90vw;
+  border-radius: 8px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.4rem;
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.6rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #ffa726, #ffca28);
+}
+
+
+
+
+
+
+/* .panelWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  width: 100%;
+  height: 37vh;
+  max-height: 37vh;
+  padding: 0.312rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.panelContent {
+  text-align: center;
+  width: 90%;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hr {
+  width: 90%;
+  height: 1px;
+  background-color: #000;
+  margin: 0 0 0.5rem 0;
+}
+
+.description {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.closeButton {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-family: 'Lobster', cursive;
+  background: linear-gradient(to right, #ff9800, #ffc107);
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+  transition: background 0.3s ease;
+}
+
+.closeButton:hover {
+  background: linear-gradient(to right, #ffa726, #ffca28);
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.input {
+  display: flex;
+  width: 50%;
+  max-width: 50%;
+  padding: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+  font-size: 0.312rem;
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input::placeholder {
+
+  font-family: 'Playfair Display', serif;
+  font-size: 0.312rem;
+  color: #000;
+  
+}
+
+.input:focus {
+  border-color: #ffcc80;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.button {
+  width: 70%;
+  max-width: 70%;
+  padding: 0.15rem;
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+  border: none;
+  color: #000;
+  font-weight: 800;
+  font-size: 0.312rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 1px 1px 2px 2px var(--sCol);
+} */
